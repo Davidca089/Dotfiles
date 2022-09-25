@@ -1,5 +1,6 @@
 vim.opt.guicursor = ""
 
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -14,6 +15,7 @@ vim.opt.wrap = false
 vim.opt.colorcolumn = "80"
 
 vim.opt.incsearch = true
+vim.opt.hlsearch = false --Disable highlight after looking
 
 vim.opt.scrolloff = 8
 
