@@ -31,4 +31,16 @@ vnoremap("<","<gv")
 vnoremap("<A-j>",":m'>+<CR>gv-gv") -- Move text up and down
 vnoremap("<A-k>",":m-2<CR>gv-gv")
 
+-- Harpoon stuff
+--
+
+local silent = {silent = true}
+
+nnoremap("<leader>a", function() require("harpoon.mark").add_file() end, silent)
+nnoremap("<leader>e", function() require("harpoon.ui").toggle_quick_menu() end, silent)
+
+nnoremap("<leader>h", function() require("harpoon.ui").nav_file(1) end, silent)
+nnoremap("<leader>j", function() require("harpoon.ui").nav_file(2) end, silent)
+nnoremap("<leader>k", function() require("harpoon.ui").nav_file(3) end, silent)
+nnoremap("<leader>l", function() require("harpoon.ui").nav_file(4) end, silent)
 

@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/dave/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/dave/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/dave/.local/share/nvim/site/pack/packer/start/nvim-cmp",

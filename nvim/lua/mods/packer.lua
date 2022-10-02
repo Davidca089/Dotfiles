@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
 
+  use "ThePrimeagen/harpoon"
   --use {
    --   "nvim-treesitter/nvim-treesitter",
     --  run = ":TSUpdate",
