@@ -54,13 +54,28 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp" --LSP completions 
 
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" --snippets to use
+  use {
+      'VonHeikemen/lsp-zero.nvim',
+      requires = {
+          -- LSP Support
+          {'neovim/nvim-lspconfig'},
+          {'williamboman/mason.nvim'},
+          {'williamboman/mason-lspconfig.nvim'},
 
-  -- LSP things
-  use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
+          -- Autocompletion
+          {'hrsh7th/nvim-cmp'},
+          {'hrsh7th/cmp-buffer'},
+          {'hrsh7th/cmp-path'},
+          {'saadparwaiz1/cmp_luasnip'},
+          {'hrsh7th/cmp-nvim-lsp'},
+          {'hrsh7th/cmp-nvim-lua'},
+
+          -- Snippets
+          {'L3MON4D3/LuaSnip'},
+          {'rafamadriz/friendly-snippets'},
+      }
+  }
+
 
   use "ThePrimeagen/harpoon"
   --use {
