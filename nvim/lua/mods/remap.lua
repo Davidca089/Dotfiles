@@ -11,6 +11,16 @@ vim.keymap.set("n", "<leader>fg","<Esc>:w<CR>:Telescope live_grep<CR>")
 -- General functionality
 --
 
+
+-- greatest remap ever
+vim.keymap.set("x", "<leader>p", "\"_dP")
+
+-- next greatest remap ever : asbjornHaland
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
+
+
 vim.keymap.set("n", "<C-h>","<C-w>h") -- change :split naviagtion
 vim.keymap.set("n", "<C-k>","<C-w>k")
 vim.keymap.set("n", "<C-j>","<C-w>j")
@@ -24,8 +34,8 @@ vim.keymap.set("n", "<leader>vs",":vsplit<CR>") --Vertical split
 vim.keymap.set("v", ">",">gv") -- Stay in indent mode
 vim.keymap.set("v", "<","<gv")
 
-vim.keymap.set("v", "<A-j>",":m'>+<CR>gv-gv") -- Move text up and down
-vim.keymap.set("v", "<A-k>",":m-2<CR>gv-gv")
+vim.keymap.set("v", "J",":m'>+<CR>gv=gv") -- Move text up and down
+vim.keymap.set("v", "K",":m-2<CR>gv=gv")
 
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
